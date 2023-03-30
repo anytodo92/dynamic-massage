@@ -22,6 +22,10 @@ const Footer = (): JSX.Element => {
                 <p><a className="link" href="mailto:info@dynamicbodymassage.ch">info@dynamicbodymassage.ch</a></p>
                 <p><a className="link" href="tel:+41 079 123 45 67">+41 079 123 45 67</a></p>
               </div>
+              <div className="social">
+                <img src={Icons.FacebookIconUrl} />
+                <img src={Icons.CameraIconUrl} />
+              </div>
             </div>
           </div>
           <div>
