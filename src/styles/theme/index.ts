@@ -19,6 +19,7 @@ const theme: DefaultTheme = {
     blue_primary: "#2686bc",
     blue_secondary: "#1677A8",
     blue_third: "#2F8BB9",
+    blue_fourth: "#14709E",
     
     white: "#ffffff",
     white_primary: "#ffffff9f",

@@ -1,3 +1,4 @@
+import UberMich from "./UberMich";
 import Kontakt from "./Kontakt";
 import {
   Images
@@ -9,6 +10,7 @@ import {
 const Startseite = (): JSX.Element => {
   return (
     <HomeWrapper>
+      <UberMich />
       <Kontakt />
     </HomeWrapper>
   );

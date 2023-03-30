@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const KontaktWrapper = styled.section`
   padding: 40px 0 60px;
   background-color: ${props => props.theme.colors.white};
-margin-top: 200px;
+
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
   }
@@ -87,7 +87,8 @@ margin-top: 200px;
       font-weight: 700;
       font-size: 16px;
       color: ${props => props.theme.colors.white};
-      background-color: ${props => props.theme.colors.green_primary};
+      background-color: ${props => props.theme.colors.blue_secondary};
+      font-family: ${props => props.theme.fonts.open_sans};
     }
   }
 
