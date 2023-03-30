@@ -5,7 +5,7 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   color: ${props => props.theme.colors.white};
   z-index: ${props => props.theme.zIndexes.footer_layout};
-  margin-top: 200px;
+  
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
   }

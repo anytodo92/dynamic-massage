@@ -42,7 +42,7 @@ const Footer = (): JSX.Element => {
       </section>
       <section>
         <div className="content">
-          <div class="txt">©Copyright 2023 - dynamic body massage</div>
+          <div className="txt">©Copyright 2023 - dynamic body massage</div>
           <div className="policy">
             <a className="link" href="/impressum">Impressum</a>
             <a className="link" href="/datenschutz">Datenschutz</a>
