@@ -64,7 +64,7 @@ export const BannerWrapper = styled.section`
   }
 
   .summary {
-    margin: 300px auto 0;
+    margin: 320px auto 0;
     width: 324px;
     > h1 {
       font-weight: 600;
@@ -87,6 +87,19 @@ export const BannerWrapper = styled.section`
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    &.datenschutz {
+      .summary {
+        transform: translateX(95%);
+      }
+    }
+
+    &.impressum {
+      .summary {
+        transform: translateX(95%);
+        top: 180px;
+      }
+    }
+
     .summary {
       margin: 0;
       position: absolute;

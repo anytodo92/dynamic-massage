@@ -3,9 +3,14 @@ import {
   BannerWrapper
 } from "./styled";
 
-const Banner = (): JSX.Element => {
+type BannerPropsType = {
+  data: any,
+  page: string,
+};
+
+const Banner = ({ data, page }: BannerPropsType): JSX.Element => {
   return (
-    <BannerWrapper>
+    <BannerWrapper className={page}>
       <div className="wrapper">
         <div className="curve-wrapper">
           <svg height="710" viewBox="0 0 1134 710" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -21,13 +26,8 @@ const Banner = (): JSX.Element => {
           </div>
         </div>
         <div className="summary">
-          <h1>
-            <p>Unterstützend zu deinem Training -</p>
-            <p><label>Professionelle Sport Massagen</label></p>
-          </h1>
-          <p>
-            Durch professionelle Massage wird das Verletzungsrisiko minimiert. Ich helfe dir deine sportlichen Ziele zu erreichen.
-          </p>
+          <h1 dangerouslySetInnerHTML={{ __html: data.title }}></h1>
+          <p dangerouslySetInnerHTML={{ __html: data.description }}></p>
         </div>
       </div>
     </BannerWrapper>
