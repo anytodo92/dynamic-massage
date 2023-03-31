@@ -19,7 +19,7 @@ export const PriceWrapper = styled.section`
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          border-top: 1px solid #F5F5F5;
+          border-top: 1px solid ${props => props.theme.colors.gray_third};
           padding: 15px 0;
           > h1 {
             font-weight: 600;
@@ -54,8 +54,8 @@ export const PriceWrapper = styled.section`
       .prices {
         justify-content: center;
         padding: 15px 0;
-        border-top: 1px solid #F5F5F5;
-        border-bottom: 1px solid #F5F5F5;
+        border-top: 1px solid ${props => props.theme.colors.gray_third};
+        border-bottom: 1px solid ${props => props.theme.colors.gray_third};
         .wrapper {
           width: auto;
           flex-direction: row;

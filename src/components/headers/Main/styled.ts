@@ -14,6 +14,7 @@ export const MainHeaderWrapper = styled.nav`
 
   &.open {
     height: 280px;
+    background-color: ${props => props.theme.colors.white};
   }
   &.normal-bar {
     animation: anim-normal-bar-show;
@@ -24,38 +25,13 @@ export const MainHeaderWrapper = styled.nav`
 
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    .brand {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100px;
-      img {
-        max-width: none;
-        &:nth-child(1) {
-          /*width: 59px;
-          height: 59px;*/
-        }
-        &:nth-child(2) {
-          /*width: 308px;
-          height: 62px;*/
-          display: none;
-        }
-      }
-      .bold {
-        font-weight: 600;
-      }
-    }
-
+    
     .control {
       .menu {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
-        line-height: 23px;
-        height: 100px;
+        line-height: 24px;
+        height: 0px;
         margin: 0;
         list-style: none;
         
@@ -67,23 +43,22 @@ export const MainHeaderWrapper = styled.nav`
           > a {
             text-decoration: none;
             font-family: ${props => props.theme.fonts.open_sans};
-            color: ${props => props.theme.colors.black_primary};
+            color: ${props => props.theme.colors.blue_primary};
           }
 
           &.active > a {
-            color: ${props => props.theme.colors.green_primary};
+            color: ${props => props.theme.colors.blue_primary};
           }
         }
       }
     }
 
     .toggle-btn  {
-      cursor: pointer;
+      display: flex;
+      align-items: center;
+      height: 90px;
       width: 30px;
-      height: 30px;
-      position: absolute;
-      left: 30px;
-      top: 30px;
+      cursor: pointer;
       color: ${props => props.theme.colors.black};
     }
   }
@@ -99,20 +74,6 @@ export const MainHeaderWrapper = styled.nav`
       animation-timing-function: ease-out;
       animation-fill-mode: forwards;
       /*background-color: transparent;*/
-      
-      .content {
-        .brand {
-          img {
-            &:nth-child(2) {
-              display: block;
-            }
-            &:nth-child(1)
-            {
-              display: none;
-            }
-          }
-        }        
-      }
     }
 
     &.sticky-bar {
@@ -122,25 +83,13 @@ export const MainHeaderWrapper = styled.nav`
       height: 90px;
       
       .content {
-        .brand {
-          height: 90px;
-          img {
-            &:nth-child(1) {
-              display: none;
-            }
-            &:nth-child(2)
-            {
-              display: block;
-            }
-          }
-        }
         .control {
           .menu {
             height: 90px;            
           }
           .toggle-btn  {
             > span {
-              background-color: ${props => props.theme.colors.black_primary};
+              background-color: ${props => props.theme.colors.blue_primary};
             }   
           }
         }
@@ -151,6 +100,7 @@ export const MainHeaderWrapper = styled.nav`
     }
 
     .content {
+      display: flex;
       justify-content: space-between;
       flex-direction: row;
 
@@ -162,6 +112,7 @@ export const MainHeaderWrapper = styled.nav`
           display: flex;
           align-items: center;
           clear: both;
+          height: 100px;
           > li {
             float: left;
             margin: 0px 28px;
@@ -173,23 +124,23 @@ export const MainHeaderWrapper = styled.nav`
             }
             
             > a {
-              color: ${props => props.theme.colors.black_primary}
+              color: ${props => props.theme.colors.blue_primary}
             }
 
             &.active > a {
-              color: ${props => props.theme.colors.black_primary};
+              color: ${props => props.theme.colors.blue_primary};
             }
           }
         }
       }
 
       .toggle-btn {
-        display: none;
+        visibility: hidden;
       }
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
+  @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
     .content {
       width: ${props => props.theme.maxWidth}px;
       margin: 0 auto;

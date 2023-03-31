@@ -26,8 +26,7 @@ const Banner = (): JSX.Element => {
             <p><label>Professionelle Sport Massagen</label></p>
           </h1>
           <p>
-            Durch professionelle Massage wird das Verletzungsrisiko
-            minimiert. Ich helfe dir deine sportlichen Ziele zu erreichen.
+            Durch professionelle Massage wird das Verletzungsrisiko minimiert. Ich helfe dir deine sportlichen Ziele zu erreichen.
           </p>
         </div>
       </div>

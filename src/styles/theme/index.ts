@@ -14,6 +14,7 @@ const theme: DefaultTheme = {
 
     gray_primary: "#0000007f",
     gray_secondary: "#fbfbfb",
+    gray_third: "#f5f5f5",
     red_primary: "#ee4141",
     green_primary: "#3cc74a",
 
