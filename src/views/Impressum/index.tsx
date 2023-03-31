@@ -6,34 +6,26 @@ import {
 
 const Impressum = (): JSX.Element => {
   const banner = {
-    title: "<p>#Zusätzliches</p>",
+    title: "<p>Impressum</p>",
     description: `
-    Impressum
+    <p><strong>dynamic body massage</strong></p>
+    <p>Schwarzhaar 51</p>
+    <p>4665 Oftringen</p>
+    <p>Schweiz</p>
+    <p>&nbsp;</p>
+    <p><strong>E-Mail:</strong> info@dynamicbodymassage.ch</p>
+    <p><strong>Internet:</strong> https://www.dynamicbodymassage.ch</p>
+    <p>&nbsp;</p>
+    <p><strong>Vertretungsberechtigte Personen:</strong></p>
+    <p>Davide Cinque</p>
+    <p>&nbsp;</p>
+    <p>UID: CH-400.4.449.414-4</p>
     `,
   };
 
   return (
     <ImpressumWrapper>
-      {/*<Banner data={banner} page="impressum" />*/}
-      <div className="content txt-wrapper">
-      <div className="txt">
-      Resin Art & Coaching GmbH<br/>
-      Schwarzhaar 51<br/>
-      4665 Oftringen<br/>
-      Schweiz
-      <br /><br />
-      E-Mail: info@resinart-coaching.ch<br/>
-      Internet: https://www.resinart-coaching.ch
-      <br /><br />
-      Vertretungsberechtigte Personen:<br/>
-      Marcello Pierri,<br/>
-      Sylive Pierri
-      <br /><br />
-      UID: CH-400.4.449.414-4
-      </div>
-      <div className="divider"></div>
-      </div>
-      
+      <Banner data={banner} page="impressum" />      
     </ImpressumWrapper>
   );
 };

@@ -14,6 +14,12 @@ import {
 } from "./styled";
 
 const Startseite = (): JSX.Element => {
+  const banner = {
+    title: "<p>Unterstützend zu deinem Training -</p><p><label>Professionelle Sport Massagen</label></p>",
+    description: `
+    Durch professionelle Massage wird das Verletzungsrisiko minimiert. Ich helfe dir deine sportlichen Ziele zu erreichen.
+    `
+  }
   const data1 = {
     title: "Angebot & Preise",
     description: `
@@ -30,7 +36,7 @@ const Startseite = (): JSX.Element => {
   }
   return (
     <HomeWrapper>
-      <Banner />
+      <Banner page="home" data={banner} />
       <SimpleText data={data1}/>
       <Empty height={40} />
       <Card />
