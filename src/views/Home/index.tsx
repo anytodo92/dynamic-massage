@@ -5,7 +5,7 @@ import SimpleText from "../Common/SimpleText";
 import Empty from "../Common/Empty";
 import Card from "./Card";
 import Text from "./Text";
-import Banner from "./Banner";
+import Banner from "../Common/Banner";
 import {
   Images
 } from "../../utils/assets";
@@ -30,7 +30,7 @@ const Startseite = (): JSX.Element => {
   }
   return (
     <HomeWrapper>
-      <Empty height={200} />
+      <Banner />
       <SimpleText data={data1}/>
       <Empty height={40} />
       <Card />

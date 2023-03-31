@@ -10,7 +10,6 @@ export const MainHeaderWrapper = styled.nav`
   overflow: hidden;
   
   z-index: ${props => props.theme.zIndexes.headerBar};
-  background-color: ${props => props.theme.colors.white};
   transition: height .5s ease-in-out;
 
   &.open {
