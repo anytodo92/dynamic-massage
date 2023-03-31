@@ -13,15 +13,18 @@ const theme: DefaultTheme = {
     black_primary: "#5c5c5c",
 
     gray_primary: "#0000007f",
+    gray_secondary: "#fbfbfb",
     red_primary: "#ee4141",
     green_primary: "#3cc74a",
+
 
     blue_primary: "#2686bc",
     blue_secondary: "#1677A8",
     blue_third: "#2F8BB9",
+    blue_fourth: "#14709E",
     
     white: "#ffffff",
-    white_primary: "#ffffff9f",
+    white_primary: "#ffffffcc",
     
   },
   breakpoints: {

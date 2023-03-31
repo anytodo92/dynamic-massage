@@ -5,7 +5,7 @@ export const FooterWrapper = styled.footer`
   width: 100%;
   color: ${props => props.theme.colors.white};
   z-index: ${props => props.theme.zIndexes.footer_layout};
-  margin-top: 200px;
+  
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
   }
@@ -37,6 +37,16 @@ export const FooterWrapper = styled.footer`
           display: flex;
           justify-content: center;
 
+          &:nth-child(1) {
+            order: 3;
+          }
+          &:nth-child(2) {
+            order: 1;
+          }
+          &:nth-child(3) {
+            order: 2;
+          }
+
           .wrapper {
             .icon {
               display: flex;
@@ -57,6 +67,15 @@ export const FooterWrapper = styled.footer`
               margin-top: 5px;
               text-align: center;
             }
+
+            .social {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              column-gap: 10px;
+              margin-top: 5px;
+            }
+
           }
 
           &:last-child {
@@ -115,8 +134,10 @@ export const FooterWrapper = styled.footer`
           > div {
             &:nth-child(1) {
               justify-content: flex-start;
+              order: 1;
             }
             &:nth-child(2) {
+              order: 2;
               .wrapper {
                 .icon {
                   align-items: center;
@@ -126,7 +147,8 @@ export const FooterWrapper = styled.footer`
                 }
               }
             }
-            &:last-child {
+            &:nth-child(3) {
+              order: 3;
               justify-content: flex-end;
               .wrapper {
                 .icon {

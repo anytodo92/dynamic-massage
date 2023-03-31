@@ -22,6 +22,10 @@ const Footer = (): JSX.Element => {
                 <p><a className="link" href="mailto:info@dynamicbodymassage.ch">info@dynamicbodymassage.ch</a></p>
                 <p><a className="link" href="tel:+41 079 123 45 67">+41 079 123 45 67</a></p>
               </div>
+              <div className="social">
+                <img src={Icons.FacebookIconUrl} />
+                <img src={Icons.CameraIconUrl} />
+              </div>
             </div>
           </div>
           <div>
@@ -42,7 +46,7 @@ const Footer = (): JSX.Element => {
       </section>
       <section>
         <div className="content">
-          <div class="txt">©Copyright 2023 - dynamic body massage</div>
+          <div className="txt">©Copyright 2023 - dynamic body massage</div>
           <div className="policy">
             <a className="link" href="/impressum">Impressum</a>
             <a className="link" href="/datenschutz">Datenschutz</a>
