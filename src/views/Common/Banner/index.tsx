@@ -8,7 +8,7 @@ const Banner = (): JSX.Element => {
     <BannerWrapper>
       <div className="wrapper">
         <div className="curve-wrapper">
-          <svg width="1134" height="710" viewBox="0 0 1134 710" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg height="710" viewBox="0 0 1134 710" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M727 -36C641.282 91.8121 374.476 296.984 -7 95.1756" stroke="#C4C4C4" stroke-opacity="0.24" stroke-width="2"/>
             <path d="M1133 -38C1020.15 299.791 607.319 1008.97 -40 569.486" stroke="#C4C4C4" stroke-opacity="0.24" stroke-width="2"/>
           </svg>

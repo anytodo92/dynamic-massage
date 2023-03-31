@@ -17,6 +17,10 @@ export const BannerWrapper = styled.section`
     width: 1173px;
     height:747px;
     display: none;
+
+    svg {
+      width: 1134px;
+    }
   }
 
   .shape-wrapper {
@@ -189,6 +193,14 @@ export const BannerWrapper = styled.section`
           margin-top: -620px;
           margin-left: -250px;
         }
+      }
+    }
+  }
+
+  @media (min-width: 2036px) {
+    .curve-wrapper {
+      svg {
+        width: 55.69vw;
       }
     }
   }
