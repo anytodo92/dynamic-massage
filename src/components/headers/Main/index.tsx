@@ -53,6 +53,16 @@ const MainHeader: React.FC = () => {
   return (
     <MainHeaderWrapper className={`navbar ${stickyBar ? "sticky-bar" : "normal-bar"} ${toggleStatus ? "open" : ""}`}>
       <div className="content">
+        <div
+          className="toggle-btn"
+          onClick={toggleMenu}
+        >
+          <svg width="31" height="17" viewBox="0 0 31 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="1" x2="30.9899" y2="1" stroke="#1677A8" stroke-width="2"/>
+          <line y1="8.15234" x2="30.9899" y2="8.15234" stroke="#1677A8" stroke-width="2"/>
+          <line y1="15.8984" x2="30.9899" y2="15.8984" stroke="#1677A8" stroke-width="2"/>
+          </svg>
+        </div>
         <div className="control">
           <ul className="menu">
           {linkList.map((data, index) =>
@@ -62,12 +72,7 @@ const MainHeader: React.FC = () => {
           )}
           </ul>
         </div>
-        <div
-          className="toggle-btn"
-          onClick={toggleMenu}
-        >
-          <i className="fa fa-bars"></i>
-        </div>
+        
       </div>
     </MainHeaderWrapper>
   )

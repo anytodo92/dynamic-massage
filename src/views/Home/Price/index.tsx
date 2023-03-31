@@ -22,7 +22,7 @@ const Price = (): JSX.Element => {
     {
       id: 3,
       title: "90 Minuten",
-      content: "CHF 70.-",
+      content: "CHF 90.-",
     }
   ]
   return (
