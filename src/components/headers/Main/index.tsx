@@ -28,7 +28,7 @@ const MainHeader: React.FC = () => {
       path: "/#uber",
     },
     {
-      title: "Kontakt",
+      title: "Kontakt / Termin",
       path: "/#kontakt",
     },
   ]);

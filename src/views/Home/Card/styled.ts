@@ -18,7 +18,7 @@ export const CardWrapper = styled.section`
         padding: 15px 50px 48px 25px;
 
         > h1 {
-          font-weight: 600;
+          font-weight: 500;
           font-size: 20px;
           line-height: 30px;
           color: ${props => props.theme.colors.black};

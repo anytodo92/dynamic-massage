@@ -28,7 +28,7 @@ export const MainHeaderWrapper = styled.nav`
     
     .control {
       .menu {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 24px;
         height: 0px;
