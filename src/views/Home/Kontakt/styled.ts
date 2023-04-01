@@ -22,7 +22,7 @@ export const KontaktWrapper = styled.section`
   }
 
   h1 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 28px;
     line-height: 42px;
     text-align: center;

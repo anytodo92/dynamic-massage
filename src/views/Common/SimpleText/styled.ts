@@ -6,7 +6,7 @@ export const SimpleTextWrapper = styled.section`
     margin: 0 ${props => props.theme.margins.primary}px;
 
     > h1 {
-      font-weight: 600;
+      font-weight: 500;
       font-size: 28px;
       line-height: 42px;
       color: ${props => props.theme.colors.black};
@@ -15,7 +15,7 @@ export const SimpleTextWrapper = styled.section`
 
     > p {
       text-align: center;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 18px;
       line-height: 27px;
       color: ${props => props.theme.colors.gray_primary};

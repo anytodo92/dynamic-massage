@@ -67,10 +67,10 @@ export const BannerWrapper = styled.section`
     margin: 320px auto 0;
     width: 324px;
     > h1 {
-      font-weight: 600;
+      font-weight: 500;
       color: ${props => props.theme.colors.black};
       font-size: 18px;
-      line-height: 27px;
+      line-height: 45px;
 
       label {
         color: ${props => props.theme.colors.blue_secondary};
@@ -78,7 +78,7 @@ export const BannerWrapper = styled.section`
     }
 
     > p {
-      font-weight: 500;
+      font-weight: 400;
       color: ${props => props.theme.colors.gray_primary};
       font-size: 12px;
       line-height: 18px;
@@ -105,7 +105,7 @@ export const BannerWrapper = styled.section`
       position: absolute;
       top: 200px;
       right: 50%;
-      transform: translateX(80%);
+      transform: translateX(85%);
       margin-right: 20px;
       width: 658px;
 

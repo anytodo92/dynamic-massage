@@ -26,14 +26,16 @@ export const PriceWrapper = styled.section`
             font-size: 18px;
             line-height: 22px;
             color: ${props => props.theme.colors.black};
+            text-align: center;
           }
 
           > p {
-            font-weight: 400;
+            font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             color: ${props => props.theme.colors.black};
             text-align: center;
+            margin-top: 5px;
           }
 
           &:last-child {
