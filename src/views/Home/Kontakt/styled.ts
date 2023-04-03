@@ -23,7 +23,7 @@ export const KontaktWrapper = styled.section`
 
   h1 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     text-align: left;
     color: ${props => props.theme.colors.black};
@@ -44,7 +44,7 @@ export const KontaktWrapper = styled.section`
         
         > .group {
           > label {
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 400;
             line-height: 18px;
             color: ${props => props.theme.colors.black_primary};
@@ -78,14 +78,14 @@ export const KontaktWrapper = styled.section`
     button {
       display: inline-flex;
       width: 135px;
-      height: 29px;
+      height: 32px;
       justify-content: center;
       align-items: center;
       border-radius: 38px;
       cursor: pointer;
       margin-top: 10px;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 14px;
       color: ${props => props.theme.colors.white};
       background-color: ${props => props.theme.colors.blue_secondary};
       font-family: ${props => props.theme.fonts.open_sans};
