@@ -23,8 +23,8 @@ const Footer = (): JSX.Element => {
                 <p><a className="link" href="tel:+41 079 123 45 67">+41 079 123 45 67</a></p>
               </div>
               <div className="social">
-                <img src={Icons.FacebookIconUrl} />
-                <img src={Icons.CameraIconUrl} />
+                <a href="https://www.facebook.com"><img src={Icons.FacebookIconUrl} /></a>
+                <a href="https://www.instagram.com"><img src={Icons.CameraIconUrl} /></a>
               </div>
             </div>
           </div>

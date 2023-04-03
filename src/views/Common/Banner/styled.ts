@@ -64,13 +64,13 @@ export const BannerWrapper = styled.section`
   }
 
   .summary {
-    margin: 320px auto 0;
+    margin: 280px auto 0;
     width: 324px;
     > h1 {
       font-weight: 500;
       color: ${props => props.theme.colors.black};
       font-size: 18px;
-      line-height: 45px;
+      line-height: 27px;
 
       label {
         color: ${props => props.theme.colors.blue_secondary};

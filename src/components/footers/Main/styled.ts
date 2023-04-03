@@ -12,13 +12,13 @@ export const FooterWrapper = styled.footer`
 
   > section {
     &:first-child {
-      padding: 20px 0;
+      padding: 30px 0 40px;
       background-color: ${props => props.theme.colors.blue_primary};
 
       .content {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: 30px;
+        row-gap: 35px;
         p, a.link {
           font-size: 16px;
           font-weight: 400;
@@ -128,6 +128,7 @@ export const FooterWrapper = styled.footer`
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     > section {
       &:first-child {
+        padding: 20px 0;
         .content {
           grid-template-columns: 1fr 1fr 1fr;
 

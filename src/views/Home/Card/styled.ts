@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardWrapper = styled.section`
   background-color: ${props => props.theme.colors.white};
-
+  padding: 27px 0 0;
   .content {
     margin: 0 ${props => props.theme.margins.primary}px;
 
@@ -19,8 +19,8 @@ export const CardWrapper = styled.section`
 
         > h1 {
           font-weight: 500;
-          font-size: 20px;
-          line-height: 30px;
+          font-size: 16px;
+          line-height: 24px;
           color: ${props => props.theme.colors.black};
           margin-top: 15px;
         }
@@ -28,8 +28,8 @@ export const CardWrapper = styled.section`
         > p {
           margin-top: 20px;
           font-weight: 400;
-          font-size: 14px;
-          line-height: 21px;
+          font-size: 12px;
+          line-height: 18px;
           color: ${props => props.theme.colors.gray_primary};
         }
       }
@@ -41,6 +41,18 @@ export const CardWrapper = styled.section`
       .cards {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 65px;
+
+        .one {
+          > h1 {
+            font-size: 20px;
+            line-height: 30px;
+          }
+
+          > p {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
       }
     }
   }
