@@ -22,16 +22,16 @@ export const PriceWrapper = styled.section`
           border-top: 1px solid ${props => props.theme.colors.gray_third};
           padding: 15px 0;
           > h1 {
-            font-weight: 600;
-            font-size: 18px;
+            font-weight: 500;
+            font-size: 12px;
             line-height: 22px;
             color: ${props => props.theme.colors.black};
             text-align: center;
           }
 
           > p {
-            font-weight: 500;
-            font-size: 18px;
+            font-weight: 400;
+            font-size: 12px;
             line-height: 22px;
             color: ${props => props.theme.colors.black};
             text-align: center;
@@ -66,6 +66,16 @@ export const PriceWrapper = styled.section`
             flex-direction: column;
             width: 125px;
             border: none!important;
+
+            > h1 {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            > p {
+              font-size: 18px;
+              line-height: 22px;
+            }
           }
         }
       }

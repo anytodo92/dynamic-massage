@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const UberMichWrapper = styled.section`
   background-color: ${props => props.theme.colors.white};
-
+  margin-top: 48px;
   .wrapper {
     background-color: ${props => props.theme.colors.blue_secondary};
     border-radius: 45px 0 0 45px;
@@ -16,17 +16,18 @@ export const UberMichWrapper = styled.section`
       .article {
         flex: 1 1 auto;
         > h1 {
-          font-weight: 600;
-          font-size: 28px;
-          line-height: 42px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
           color: ${props => props.theme.colors.white};
         }
 
         > p {
           font-weight: 400;
-          font-size: 18px;
-          line-height: 28px;
+          font-size: 12px;
+          line-height: 18px;
           color: ${props => props.theme.colors.white_primary};
+          margin-top: 10px;
         }
       }
 
@@ -71,6 +72,7 @@ export const UberMichWrapper = styled.section`
   @media (min-width: ${props => props.theme.breakpoints.laptop}) {
     .wrapper {
       .content {
+        
         .pic {
           .shape-wrapper {
             .shape-1 {
@@ -95,6 +97,26 @@ export const UberMichWrapper = styled.section`
                 height: 480px;
               }
             }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    margin-top: 66px;
+    .wrapper {
+      .content {
+        .article {
+          > h1 {
+            font-size: 28px;
+            line-height: 42px;
+          }
+
+          > p {
+            font-size: 18px;
+            line-height: 28px;
+            margin-top: 30px;
           }
         }
       }

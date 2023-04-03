@@ -38,16 +38,12 @@ const Startseite = (): JSX.Element => {
     <HomeWrapper>
       <Banner page="home" data={banner} />
       <SimpleText data={data1}/>
-      <Empty height={40} />
       <Card />
-      <Empty height={44} />
+      <Empty height={34} />
       <Price />
       <Price />
-      <Empty height={22} />
       <Text />
-      <Empty height={44} />
       <SimpleText data={data2}/>
-      <Empty height={66} />
       <UberMich />
       <Kontakt />
     </HomeWrapper>
