@@ -19,7 +19,7 @@ export const CardWrapper = styled.section`
 
         > h1 {
           font-weight: 500;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 24px;
           color: ${props => props.theme.colors.black};
           margin-top: 15px;
@@ -28,8 +28,8 @@ export const CardWrapper = styled.section`
         > p {
           margin-top: 20px;
           font-weight: 400;
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 14px;
+          line-height: 20px;
           color: ${props => props.theme.colors.gray_primary};
         }
       }

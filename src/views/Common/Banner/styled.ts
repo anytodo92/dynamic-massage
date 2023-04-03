@@ -64,13 +64,13 @@ export const BannerWrapper = styled.section`
   }
 
   .summary {
-    margin: 280px auto 0;
-    width: 324px;
+    margin: 280px ${props => props.theme.margins.primary}px 0;
+    
     > h1 {
       font-weight: 500;
       color: ${props => props.theme.colors.black};
-      font-size: 18px;
-      line-height: 27px;
+      font-size: 20px;
+      line-height: 29px;
 
       label {
         color: ${props => props.theme.colors.blue_secondary};
@@ -80,8 +80,8 @@ export const BannerWrapper = styled.section`
     > p {
       font-weight: 400;
       color: ${props => props.theme.colors.gray_primary};
-      font-size: 12px;
-      line-height: 18px;
+      font-size: 14px;
+      line-height: 20px;
       margin-top: 5px;
     }
   }

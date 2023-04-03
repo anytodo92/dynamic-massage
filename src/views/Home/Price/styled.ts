@@ -23,7 +23,7 @@ export const PriceWrapper = styled.section`
           padding: 15px 0;
           > h1 {
             font-weight: 500;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 22px;
             color: ${props => props.theme.colors.black};
             text-align: center;
@@ -31,7 +31,7 @@ export const PriceWrapper = styled.section`
 
           > p {
             font-weight: 400;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 22px;
             color: ${props => props.theme.colors.black};
             text-align: center;

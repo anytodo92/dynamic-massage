@@ -8,8 +8,8 @@ export const TextWrapper = styled.section`
     > p {
       display: block;
       font-weight: 400;
-      font-size: 10px;
-      line-height: 15px;
+      font-size: 12px;
+      line-height: 18px;
       text-align: left;
       padding-left: 10px;
       color: ${props => props.theme.colors.gray_primary};

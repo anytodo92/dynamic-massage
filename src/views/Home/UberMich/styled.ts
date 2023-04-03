@@ -17,15 +17,15 @@ export const UberMichWrapper = styled.section`
         flex: 1 1 auto;
         > h1 {
           font-weight: 500;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 24px;
           color: ${props => props.theme.colors.white};
         }
 
         > p {
           font-weight: 400;
-          font-size: 12px;
-          line-height: 18px;
+          font-size: 14px;
+          line-height: 20px;
           color: ${props => props.theme.colors.white_primary};
           margin-top: 10px;
         }
