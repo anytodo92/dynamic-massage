@@ -16,7 +16,7 @@ export const TextWrapper = styled.section`
     }
   }
 
-  @media(min-width: ${props => props.theme.breakpoints.desktop}) {
+  @media(min-width: 900px) {
     padding: 22px 0 44px;
     .content {      
       > p {
