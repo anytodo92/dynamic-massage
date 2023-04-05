@@ -23,7 +23,7 @@ export const SimpleTextWrapper = styled.section`
     }
   }
 
-  @media(min-width: ${props => props.theme.breakpoints.desktop}) {
+  @media(min-width: 900px) {
     .content {
       > h1 {
         text-align: center;
