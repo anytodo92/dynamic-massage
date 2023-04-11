@@ -123,7 +123,7 @@ export const UberMichWrapper = styled.section`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
+  @media (min-width: 1720px) {
     .wrapper {
       border-radius: 360px 0 0 360px;
       .content {
