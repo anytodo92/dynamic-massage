@@ -16,6 +16,10 @@ export const DatenschutzWrapper = styled.div`
     strong {
       font-weight: 700;
     }
+
+    p {
+      //word-break: break-all;
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {

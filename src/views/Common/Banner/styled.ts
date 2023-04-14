@@ -65,7 +65,7 @@ export const BannerWrapper = styled.section`
 
   .summary {
     margin: 280px ${props => props.theme.margins.primary}px 0;
-    
+    max-width: 400px;
     > h1 {
       font-weight: 500;
       color: ${props => props.theme.colors.black};
@@ -86,16 +86,23 @@ export const BannerWrapper = styled.section`
     }
   }
 
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    .summary {
+      margin: 280px auto 0;
+    }
+  }
+
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
     &.datenschutz {
       .summary {
-        transform: translateX(95%);
+        transform: translateX(110%);
+        top: 180px;
       }
     }
 
     &.impressum {
       .summary {
-        transform: translateX(95%);
+        transform: translateX(110%);
         top: 180px;
       }
     }
@@ -104,19 +111,19 @@ export const BannerWrapper = styled.section`
       margin: 0;
       position: absolute;
       top: 200px;
-      right: 50%;
-      transform: translateX(85%);
+      right: 40%;
+      transform: translateX(90%);
       margin-right: 20px;
-      width: 658px;
-
+      width: 480px;
+      max-width: unset;
       > h1 {
-        font-size: 36px;
-        line-height: 54px;
+        font-size: 24px;
+        line-height: 34px;
       }
 
       > p {
-        font-size: 18px;
-        line-height: 27px;        
+        font-size: 14px;
+        line-height: 24px;        
       }
     }
     .curve-wrapper {
@@ -156,13 +163,75 @@ export const BannerWrapper = styled.section`
     }
   }
 
-  @media (min-width: ${props => props.theme.breakpoints.desktop_lg}) {
-    
+  @media (min-width: 1080px) {
+    &.impressum {
+      .summary {
+        transform: translateX(110%);
+        top: 200px;
+      }
+    }
+    &.datenschutz {
+      .summary {
+        transform: translateX(110%);
+        top: 200px;
+      }
+    }
+    .summary {
+      top: 230px;
+    }
+  }
+  @media (min-width: 1250px) {
+    .summary {
+      top: 250px;
+    }
+  }
+
+  @media (min-width: 1300px) {
+    &.impressum {
+      .summary {
+        transform: translateX(105%);
+        top: 230px;
+      }
+    }
+    &.datenschutz {
+      .summary {
+        transform: translateX(105%);
+        top: 230px;
+      }
+    }
+    .summary {
+      transform: translateX(85%);
+      top: 260px;
+      width: 630px;
+      > h1 {
+        font-size: 32px;
+        line-height: 42px;
+      }
+
+      > p {
+        font-size: 18px;
+        line-height: 27px;        
+      }
+    }
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop_ml}) {
+    &.impressum {
+      .summary {
+        transform: translateX(95%);
+      }
+    }
+    &.datenschutz {
+      .summary {
+        transform: translateX(95%);
+      }
+    }
     .summary {
-      top: 260px;
+      width: 720px;
+      > h1 {
+        font-size: 36px;
+        line-height: 54px;
+      }
     }
     .curve-wrapper {
       top: -50px;
