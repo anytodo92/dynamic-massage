@@ -15,9 +15,9 @@ import {
 
 const Startseite = (): JSX.Element => {
   const banner = {
-    title: "<p>Unterstützend zu deinem Training -</p><p>Professionelle <label>Sport Massagen</label></p>",
+    title: "<p>Unterstützend in deinem Alltag und Training - Professionelle Entspannungs- und Sportmassagen</p>",
     description: `
-    Durch professionelle Massage wird das Verletzungsrisiko minimiert. Ich helfe dir deine sportlichen Ziele zu erreichen.
+    Deine Gesundheit ist meine Inspiration
     `
   }
   const data1 = {
